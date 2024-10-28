@@ -1,0 +1,103 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doações - Calcados</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../script/script.js"></script>
+    </head>
+    <body>
+      <header>
+        <img class="logo" src="../midias/logoredondo.jpg" alt="Logo do tópico redução da desigualdade social" width="100px" height="100px">
+         <h1 id = titulo>Faça a Diferença</h1> 
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="../Pag_homepage/index.html" target="_blank">Página Inicial</a>
+                      <a class="nav-link" href="../Pag_Cadastro/index.html" target="_blank">Cadastrar</a>
+                      <a class="nav-link" href="../Pag_login/index.html" target="_blank">Entrar</a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+    </header>
+    <main>
+
+      <form method="post" action="">
+        <div class="containerEspecificacao">
+            <h3 id="h3Roupas">Específique sua doação &#10140;</h3><br>
+    
+            <div class="row2">
+                <select id="input" class="form-select" required="">
+                    <option selected disabled value="">Tipo do calçado</option>
+                    <option value="Tenis">Tênis</option>
+                    <option value="Chinelo">Chinelo</option>
+                    <option value="Sapatilha">Sapatilha</option>
+                    <option value="Salto">Salto</option>
+                    <option value="Bota">Bota (cano alto ou curto)</option>
+                </select>
+    
+                <input type="number" class="form-control" id="inputQuant" required="" placeholder="Quantidade (1 = 1 par)">
+            </div>
+    
+            <div class="row2">
+                <select id="inputTamanho" class="form-select" required="">
+                    <option selected disabled value="">Tamanho</option>
+                    <option value="10-32">entre 10 e 32</option>
+                    <option value="33-41">entre 33 e 41</option>
+                    <option value="42-48">entre 42 e 48</option>
+                </select>
+    
+                <select id="inputEstadoDoacao" class="form-select" required="">
+                    <option selected disabled value="">Estado do calçado</option>
+                    <option value="Novo">Novo</option>
+                    <option value="UsadoBomEstado">Usado em bom estado</option>
+                    <option value="Usado">Usado</option>
+                    <option value="Gasto">Gasto</option>
+                    <option value="MuitoGasto">Muito gasto</option>
+                </select>
+            </div><br><br>
+
+            <button id="submitDoacao" type="submit" class="btn btn-primary btn-lg">Enviar</button>
+        </div>
+    </form>
+
+    <article>
+      <div class="containerAjuda">
+          <h4><strong>Quem você ajuda?</strong></h4><br>
+  
+          <div class="imagens">
+              <div class="item1">
+                  <img src="../midias/criancasDoacao.png" alt="Imagem de crianças precisando de doação de roupa">
+              </div>
+              <div class="item1">
+                  <img src="../midias/fomeDoacao.jpg" alt="Imagem de uma mulher com bandeja entregando comida para pessoas com fome">
+              </div>
+              <div class="item1">
+                  <img src="../midias/doacaoRoupasImg.jpg" alt="Imagem de pessoas de baixa renda escolhendo roupas em cima de uma mesa (roupas de doações)">
+              </div>
+          </div>
+      </div>
+  </article>
+
+    </main>
+    <footer>
+        <article>
+          <img class="logoFooter" src="../midias/logoredondo.jpg" alt="Logo do tópico redução da desigualdade social" width="100px" height="100px">
+            <ul>
+              <div>
+                <li><img src="../midias/ImagemDebora.jpg" alt="Imagem da integrante do grupo Débora Farinelli">Débora Farinelli Salvador: <a href="https://www.linkedin.com/in/deborafarinelli/" target="_blank">Linkedin</a></li><br>
+                <li><img src="../midias/ImagemAna.jpg" alt="Imagem da integrante do grupo Ana Beatriz"> Ana Beatriz dos Santos: <a href="https://www.linkedin.com/in/ana-beatriz-dos-santos-286807226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Linkedin</a></li><br>
+              </div>
+              <div> 
+                <li><img src="../midias/ImagemIsabela.jpg" alt="Imagem da integrante do grupo Isabela Siqueira">Isabela Siqueira da Silva: <a href="https://www.linkedin.com/in/isabela-siqueira-da-silva-463235303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Linkedin</a></li><br>
+                <li><img src="../midias/ImagemGustavo.jpg" alt="Imagem do integrante do grupo Gustavo Mendes">Gustavo Mendes Silva: <a href="https://www.linkedin.com/in/gustavo-mendes-52ba682b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Linkedin</a></li><br>
+              </div>
+            </ul>
+        </article>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+      </footer>
+    </body>
+  </html>

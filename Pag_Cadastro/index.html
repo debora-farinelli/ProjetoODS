@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css" >
+    </head>
+	<body>
+        <div class="bodyCadastro">
+		<header>
+            <header>
+                <img class="logo" src="../midias/logoredondo.jpg" alt="Logo do tópico redução da desigualdade social" width="100px" height="100px">
+                 <h1 id = titulo>Faça a Diferença - Página de Cadastro</h1> 
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                              <a class="nav-link active" aria-current="page" href="../Pag_homepage/index.html" target="_blank">Página Inicial</a>
+                              <a class="nav-link" href="../Pag_Cadastro/index.html" target="_blank">Cadastrar</a>
+                              <a class="nav-link" href="../Pag_login/index.html" target="_blank">Entrar</a>
+                            </div>
+                          </div>
+                        </div>
+                    </nav>
+            </header>
+        </header>
+		<main>
+			<section id="conteudoCadastro">
+			<form>
+				<h3>Cadastro</h3>
+				<br>
+				<label for="inputName" class="form-label">Nome:</label>
+    			<input type="text" class="form-control" id="inputName" placeholder="Digite seu nome" required>
+                <br>
+				<label for="inputEmail" class="form-label">Email:</label>
+    			<input type="email" class="form-control" id="inputEmail" placeholder="Digite seu email" required>
+                <br>
+				<label for="inputSenha" class="form-label">Senha:</label>
+    			<input type="password" required="" class="form-control" id="inputSenha" placeholder="Digite sua senha"/>
+                <br>
+				<label for="inputCPF/CNPJ" class="form-label">CPF / CNPJ:</label>
+    			<input type="text" class="form-control" id="inputCPF/CNPJ" placeholder="Digite seu CNPJ ou CPF" required>
+                <br>
+				<label for="inputTelefone" class="form-label">Telefone / Celular:</label>
+    			<input type="tel" class="form-control" id="inputTelefone" placeholder="Digite seu telefone ou celular" required>
+                <br>
+				<label for="inputEstado" class="form-label">Selecione seu estado:</label>
+    			<select id="inputEstado" class="form-select" required>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraiba</option>
+                    <option value="PR">Parana</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondânia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <br><br>
+				<p><b>Você é:  </b></p> <input class="form-check-input" type="radio" name="Identificacao" value="PessoaFisica" checked required>
+        		<label class="form-check-label" for="Identificacao">Pessoa Física</label>
+				<input class="form-check-input" type="radio" name="Identificacao" value="ONG">
+        		<label class="form-check-label" for="Identificacao">ONG</label>
+                <br><br>
+                <p><b>Sexo:  </b></p>
+				<input class="form-check-input" type="radio" name="Sexo" value="masc" checked required>
+        		<label class="form-check-label" for="Sexo">Maculino</label>
+				<input class="form-check-input" type="radio" name="Sexo" value="fem">
+        		<label class="form-check-label" for="Sexo">Feminino</label>
+                <br><br>
+
+                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                <button type="submit" class="btn btn-secondary btn-lg"><a href="../Pag_homepage/index.html" target="_blank"></a>Voltar</button>
+            </form>
+		</section>
+
+		</main>
+
+		<footer>
+            <article>
+                <img class="logoFooter" src="../midias/logoredondo.jpg" alt="Logo do tópico redução da desigualdade social" width="100px" height="100px">
+                <ul>
+                    <div>
+                        <li><img src="../midias/ImagemAna.jpg" alt="Imagem da integrante do grupo Ana Beatriz"> Ana Beatriz dos Santos: <a href="https://www.linkedin.com/in/ana-beatriz-dos-santos-286807226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Linkedin</a></li><br>
+                        <li><img src="../midias/ImagemDebora.jpg" alt="Imagem da integrante do grupo Débora Farinelli">Débora Farinelli Salvador: <a href="https://www.linkedin.com/in/deborafarinelli/" target="_blank">Linkedin</a></li><br>
+                    </div>
+    
+                    <div> 
+                        <li><img src="../midias/ImagemIsabela.jpg" alt="Imagem da integrante do grupo Isabela Siqueira">Isabela Siqueira da Silva: <a href="https://www.linkedin.com/in/isabela-siqueira-da-silva-463235303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Linkedin</a></li><br>
+                        <li><img src="../midias/ImagemGustavo.jpg" alt="Imagem do integrante do grupo Gustavo Mendes">Gustavo Mendes Silva: <a href="https://www.linkedin.com/in/gustavo-mendes-52ba682b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Linkedin</a></li><br>
+                    </div>
+                </ul>
+            </article>
+            <p>&copy; 2024 Todos os direitos reservados.</p>
+        </footer>
+	</body>
+</html>
