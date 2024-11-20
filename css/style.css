@@ -48,37 +48,72 @@ article {
 }
 
 footer {
+    background-color: #f8f9fa; /* Cor de fundo clara */
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Alinha logo e equipe verticalmente */
+    justify-content: space-between; /* Espaça logo e equipe */
 	background-image: linear-gradient(to right, #FE5359, #f5a5a5, #FE5359);
 	color: #fff;
-	padding: 10px 0;
-	
-	text-align: center;
-	height: 330px;
+	height: 250px;
 
-	.logoFooter {
-		float: left;
-		margin: 50px;
-		border: 1px solid rgba(255, 255, 255, 0);
-		border-radius: 100px;
+	.logo-container {
+		margin-right: 20px; /* Espaçamento entre logo e equipe */
 	}
-  }
-
-footer ul {
-	list-style-type: none;
-	text-align: justify;
-	margin: auto;
-	padding: 40px;
-	margin-left: 0px;
-	display: flex;
-	justify-content: center;
 	
-
+	.logoFooter {
+		width: 100px; /* Tamanho do logo */
+		height: 100px;
+	}
+	
+	.team-container {
+		flex-grow: 1; /* Permite que a equipe ocupe o espaço restante */
+		display: flex; /* Flexbox para centralizar o conteúdo */
+		justify-content: center; /* Centraliza a equipe */
+	}
+	
+	.team {
+		display: flex; /* Flexbox para colunas */
+		justify-content: space-between; /* Distribui as colunas */
+		max-width: 600px; /* Largura máxima */
+		width: 100%; /* Largura total */
+		list-style-type: none; /* Remove marcadores da lista */
+		padding: 0; /* Remove padding */
+	}
+	
+	.column {
+		display: flex;
+		flex-direction: column; /* Alinha itens verticalmente */
+		align-items: center; /* Centraliza os itens na coluna */
+		margin: 0 10px; /* Espaçamento lateral entre colunas */
+	}
+	
+	li {
+		display: flex;
+		align-items: center; /* Alinha imagem e texto */
+		margin-bottom: 10px; /* Espaçamento entre linhas */
+	}
+	
 	img {
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		object-fit: cover;
-		border: 1px solid rgba(0, 0, 0, 0);
+		border-radius: 50%; /* Torna as imagens circulares */
+		width: 50px; /* Tamanho da imagem */
+		height: 50px;
+		margin-right: 10px; /* Espaçamento entre imagem e texto */
+	}
+	
+	a {
+		color: #007bff; /* Cor do link */
+		text-decoration: none; /* Remove sublinhado */
+	}
+	
+	a:hover {
+		text-decoration: underline; /* Sublinha ao passar o mouse */
+	}
+	
+	p {
+		margin-top: 20px;
+		text-align: center; /* Centraliza o texto do copyright */
+		color: #555; /* Cor do texto */
 	}
 }
 
@@ -201,7 +236,7 @@ footer ul {
 		font-size: 16px;
 		border: 1px solid rgb(0, 0, 0);
 		border-radius: 10px;
-		background-color: #ffcc00;
+		background-color: yellow;
 	}
 
 }
@@ -213,37 +248,92 @@ footer ul {
     padding: 20px;
 
 	.left-content2 {
-		margin-left: 150px;
+		margin-left: 190px;
 		flex-basis: 60%;
 		text-align: left;
 	}
 	
 	.right-content2 {
+		margin-right: 150px;
 		flex-basis: 500px;
 		text-align: right;
 
-		a:hover { color: white; }
+		a:hover { color: rgb(0, 0, 0); }
 
 		a {
 			font-size: 20px;
-			color: black;
+			color: rgb(255, 255, 255);
 			text-decoration: none;
 			width: 200px;
 		}
 	}
+}	
+
+.containerAgradecimento2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	padding: 20px;
+	margin-top: -100px;
+
+	.center-content {
+		margin: 0;
+		padding: 60px;
+		width: 600px;
+		border: 1px solid rgb(255, 242, 242);
+		border-radius: 30px;
+		background-color: #ffeef1;
 	
+		.feedback {
+			font-family: Arial, Helvetica, sans-serif;
+			background: white;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+			max-width: 400px;
+			margin: auto;
+
+			label {
+				display: block;
+				margin-bottom: 8px;
+				color: #555;
+			}
+	
+			textarea {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 15px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+			}
+	
+			button {
+				background-color: #28a745;
+				color: white;
+				border: none;
+				padding: 10px 15px;
+				border-radius: 4px;
+				cursor: pointer;
+				width: 100%;
+			}
+		
+			button:hover {
+				background-color: #218838;
+			}
+		}
+	}	
+}	
 	.itemHistorico {
 		text-align: center;
 		font-size: 22px;
 		border: 1px solid rgb(255, 255, 255);
 		border-radius: 10px;
-		background-color: #ffcc00;
+		background-color: #28a745;
 		padding: 10px;
 		width: 400px;
 	}
-}
-
-
 
 .item {
 	width: 300px;

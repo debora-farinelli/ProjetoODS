@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", function() {
     let itemHistorico = document.querySelector(".itemHistorico")
 
     itemHistorico.addEventListener("mouseover", function() {
-        itemHistorico.style.backgroundColor = "green"
+        itemHistorico.style.backgroundColor = "lightgreen"
     })
 
     itemHistorico.addEventListener("mouseout", function() {
-        itemHistorico.style.backgroundColor = "#ffcc00"
+        itemHistorico.style.backgroundColor = "#28a745"
     })
 })
 
