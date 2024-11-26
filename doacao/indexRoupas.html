@@ -1,9 +1,11 @@
+<!doctype html>
+
 <html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doações - Alimentos</title>
+    <title>Doações - Roupas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -19,10 +21,10 @@
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="../Pag_homepage/index.html"
+                        <a class="nav-link active" aria-current="page" href="../home/index.html"
                             target="_blank">Página Inicial</a>
-                        <a class="nav-link" href="../Pag_Cadastro/index.html" target="_blank">Cadastrar</a>
-                        <a class="nav-link" href="../Pag_login/index.html" target="_blank">Entrar</a>
+                        <a class="nav-link" href="../cadastro/index.html" target="_blank">Cadastrar</a>
+                        <a class="nav-link" href="../login/index.html" target="_blank">Entrar</a>
                     </div>
                 </div>
             </div>
@@ -30,86 +32,46 @@
     </header>
     <main>
 
-        <form id="formDoacao" method="post" action="">
+        <form method="post" action="">
             <div class="containerEspecificacao">
                 <h3 id="h3Roupas">Específique sua doação &#10140;</h3><br>
 
                 <div class="row2">
                     <select id="input" class="form-select" required="">
-                        <option selected disabled value="">Tipo do alimento</option>
-                        <option value="Arroz">Arroz</option>
-                        <option value="Feijao">Feijão</option>
-                        <option value="Macarrao">Macarrão</option>
-                        <option value="Acucar">Açúcar</option>
-                        <option value="Sal">Sal</option>
-                        <option value="Leite-em-pó">Leite em pó</option>
-                        <option value="Milho-fuba">Milho (em grãos ou fubá)</option>
-                        <option value="Oleo-vegetal">Óleo vegetal</option>
-                        <option value="Cafe">Café</option>
-                        <option value="Farinha-de-trigo">Farinha de trigo</option>
-                        <option value="Latinha-atum">Latinha de atum</option>
-                        <option value="Latinha-sardinha">Latinha de sardinha</option>
+                        <option selected disabled value="">Tipo da roupa</option>
+                        <option value="Casaco">Casaco</option>
+                        <option value="Vestido">Vestido</option>
+                        <option value="Calca">Calça</option>
+                        <option value="Camiseta">Camiseta</option>
+                        <option value="Saia">Saia</option>
+                        <option value="ShortsBermuda">Shorts / Bermuda</option>
+                        <option value="Moletom">Moletom</option>
                     </select>
 
                     <input type="number" class="form-control" id="inputQuant" required="" placeholder="Quantidade">
                 </div>
 
                 <div class="row2">
-                    <select id="inputKg" class="form-select" required="">
-                        <option selected disabled value="">Kg - gramas</option>
-                        <option value="Indefinido">Indefinido (em caso de alimento de Litros - ml)</option>
-                        <option value="125g">125g</option>
-                        <option value="170g">170g</option>
-                        <option value="185g">185g</option>
-                        <option value="200g">200g</option>
-                        <option value="250g">250g</option>
-                        <option value="300g">300g</option>
-                        <option value="400g">400g</option>
-                        <option value="500g">500g</option>
-                        <option value="1kg">1kg</option>
-                        <option value="2kg">2kg</option>
-                        <option value="5kg">5kg</option>
-                        <option value="10kg">10kg</option>
-                        <option value="25kg">25kg</option>
-                        <option value="30kg">30kg</option>
-                        <option value="50kg">50kg</option>
-                        <option value="60kg">60kg</option>
+                    <select id="inputTamanho" class="form-select" required="">
+                        <option selected disabled value="">Tamanho</option>
+                        <option value="PP">PP</option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
                     </select>
 
-                    <select id="inputMl" class="form-select" required="">
-                        <option selected disabled value="">Litros - ml</option>
-                        <option value="Indefinido">Indefinido (em caso de alimento de Kg - g)</option>
-                        <option value="500ML">500ml</option>
-                        <option value="1L">1L</option>
-                        <option value="5L">5L</option>
-                        <option value="1">1kg</option>
-                        <option value="2">2kg</option>
-                        <option value="5">5kg</option>
-                        <option value="10">10kg</option>
-                        <option value="25">25kg</option>
-                        <option value="30">30kg</option>
-                        <option value="50">50kg</option>
-                        <option value="60">60kg</option>
-                    </select>
-
-                    <select id="inputValidade" class="form-select" required="">
-                        <option selected disabled value="">Válido até</option>
-                        <option value="Indefinido">Indefinido</option>
-                        <option value="Sem-validade">Sem validade (não estraga)</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
-                        <option value="2028">2028</option>
-                        <option value="2029">2029</option>
-                        <option value="2030">2030</option>
-                        <option value="2031">2031</option>
-                        <option value="2032">2032</option>
-                        <option value="2033">2033</option>
+                    <select id="inputEstadoDoacao" class="form-select" required="">
+                        <option selected disabled value="">Estado da peça</option>
+                        <option value="Novo">Novo</option>
+                        <option value="UsadoBomEstado">Usado em bom estado</option>
+                        <option value="Usado">Usado</option>
+                        <option value="Gasto">Gasto</option>
+                        <option value="MuitoGasto">Muito gasto</option>
                     </select>
                 </div><br><br>
 
-                <button id="submitDoacao" type="submit" class="btn btn-primary btn-lg"
-                    onclick="redirecionar()">Enviar</button>
+                <button id="submitDoacao" type="submit" class="btn btn-primary btn-lg">Enviar</button>
             </div>
         </form>
 
